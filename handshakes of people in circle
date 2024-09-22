@@ -1,0 +1,27 @@
+n people are sitting in a circular manner and each person shaked hand with the adjacent people already now the condition is that every person should shake hand with remaining all other people
+so tell the count of the shakehands left?
+already each person shaked hand with two adjacent people =>n-2 
+no one would shake hand with one's own self so total n-3
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+   int n;
+   cin>>n;
+   if(n<3)
+   cout<<0;
+   else
+   cout<<(n*(n-3))/2;
+    return 0;
+}
+output
+5
+5
+
+dry run
+12345 are the people
+(1,2)(1,3)(1,4)(1,5)(2,3)(2,4)(2,5)(3,4)(3,5)(4,5)
+  total =10
+  the adjacent shakehands which are done
+(1,2)(1,5)(5,4)(4,3)(2,3)
+  leftover shakehands=5
