@@ -1,0 +1,19 @@
+A hidden key is present in the form of upper case print the hidden key
+solved 75/100 one testcase  of 25 points is missing
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    string s,t="";
+    cin>>s;
+    int i;
+    for(i=0;i<s.length();i++){
+        if(s[i]>='A'&&s[i]<='Z')
+        t+=s[i];
+    }
+    cout<<t;
+    return 0;
+}
+output
+teAJEI
+AJEI
