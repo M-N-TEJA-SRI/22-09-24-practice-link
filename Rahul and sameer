@@ -1,0 +1,30 @@
+rahul and sameer wants to share the answers but the twist which examiners gives is each person gets different sets based on the roll nos (a,b are the two boys rollnos)
+(a-1)%p=(b-1)%p so for what values of p will they be able to share the answers.
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+ int a,b,c=1,i=2;
+ cin>>a>>b;
+ a-=1;
+ b-=1;
+ while(i<=max(a,b)){
+     if(a%i==b%i)
+     
+         c++;
+     i++;    
+     
+ }
+ cout<<c;
+    return 0;
+}
+output
+2 6
+3
+working
+a=2 b=6
+a=1 b=5
+1%1=5%1=0
+1%2=5%2=1
+1%4=5%4=1
+so count is 3
