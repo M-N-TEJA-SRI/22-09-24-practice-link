@@ -1,0 +1,27 @@
+a number is given using all digits print the absolute difference between the minimum and maximum difference formed between the numbers
+#include <iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+int main() {
+    // Write C++ code here
+    long long int x,mini=0,maxi=0,i;
+    cin>>x;
+    vector<int>v;
+    while(x){
+        v.push_back(x%10);
+        x/=10;
+    }
+    sort(v.begin(),v.end());
+    for(i=0;i<v.size();i++){
+        mini=mini*10+v[i];
+    }
+    for(i=v.size()-1;i>=0;i--){
+        maxi=maxi*10+v[i];
+    }
+    cout<<abs(maxi-mini);
+    return 0;
+}
+output
+1234
+3087
