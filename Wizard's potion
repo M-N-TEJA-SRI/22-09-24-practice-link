@@ -1,0 +1,17 @@
+A witch has a magical power a and has a time of b hours within each hour the power of the herbs gets doubled so at the end of the b hours find the amount of the magical power of the herbs.
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+   int a,b;
+   cin>>a>>b;
+   int i;
+   for(i=0;i<b;i++){
+       a*=2;
+   }
+   cout<<a;
+    return 0;
+}
+output
+7 3
+56
