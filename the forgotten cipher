@@ -1,0 +1,19 @@
+each letter should go back by few postions in an incrementing way 
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+  string s;
+  cin>>s;
+  int i;
+  for(i=0;i<s.length();i++){
+      s[i]=s[i]-(i+1);
+      if(s[i]<'a')
+      s[i]='z';
+  }
+  cout<<s;
+    return 0;
+}
+output
+abcde
+zzzzz
